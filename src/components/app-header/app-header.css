@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: #1f1f1f;
 }
 
@@ -21,4 +22,27 @@
   width: 2px;
   height: 20px;
   margin: 0 30px;
+}
+
+.social-block {
+  position: absolute;
+  right: 20px;
+  bottom: -50%;
+  transform: translateY(-5px);
+}
+
+.btn-social-icon {
+  border-radius: 50%;
+  border: 3px #fff solid;
+  background-color: #d81616;
+}
+.btn-social-icon .fa {
+  font-size: 18px;
+  padding-bottom: 5px;
+  line-height: 1.5;
+}
+
+.btn-social-icon:hover {
+  border: 3px #fff solid;
+  background-color: #970505;
 }

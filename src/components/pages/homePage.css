@@ -1,0 +1,56 @@
+.home {
+  position: relative;
+}
+.home-bg {
+  width: 100%;
+  max-height: 300px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.avatar-photo {
+  position: absolute;
+  bottom: 22%;
+  left: 0;
+  width: 250px;
+  height: 260px;
+  border-radius: 5px;
+}
+.avatar-name {
+  letter-spacing: -1px;
+}
+
+.name-desc-wrap {
+  margin-left: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-img {
+  width: 150px;
+  height: 100px;
+}
+
+.project-img_lg {
+  margin: 20px;
+  width: 310px;
+  height: 200px;
+}
+
+.my-work-items p {
+  margin-top: 15px;
+}
+
+@media (max-width: 1100px) {
+  .project-img_lg {
+    width: 250px;
+    height: 150px;
+  }
+}
