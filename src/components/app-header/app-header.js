@@ -34,7 +34,8 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
                     <ul className="nav header-nav">
                         {menu}
                     </ul>
-                    <div className="lang-btn-container">
+                </div>
+                <div className="lang-btn-container">
                         <div className="btn-group" role="group" aria-label="Basic radio toggle button group">
                             <input
                                 checked={langValue === "eng"}
@@ -60,7 +61,6 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
                             <label className="btn btn-sm btn-outline-light lang-btn" htmlFor="btn-radio2">pol</label>
                         </div>
                     </div>
-                </div>
                 <div className="social-block">
                     <a
                         href="https://www.facebook.com/yuriy.gnatuyk"

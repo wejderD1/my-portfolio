@@ -38,6 +38,10 @@
         align-items: flex-start;
     }
 
+    .contact-container{
+        width: 50%
+    }
+
 }
 
 /* Landscape phones and smaller */
@@ -54,6 +58,10 @@
 
     .main-menu{
         display: none !important;
+    }
+
+    .contact-container{
+        width: 80%
     }
 }
 

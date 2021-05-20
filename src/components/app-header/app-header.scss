@@ -3,6 +3,14 @@
     background-color: rgb(31, 31, 31);
 }
 
+.lang-btn-container{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    transform: translateY(-50%);
+}
+
 .nav{
     align-items: center;
     &-link{
