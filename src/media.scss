@@ -1,0 +1,52 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .name-desc-wrap {
+        margin-left: 30%;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    .bi{
+        margin: 0 10px;
+    }
+
+    .name-desc-wrap {
+        margin-left: 40%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .name-desc-wrap {
+        margin-left: 50%;
+    }
+
+    .main-comments{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+// По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:
+
+@media (max-width: 650) {
+
+}

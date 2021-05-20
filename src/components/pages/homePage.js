@@ -35,14 +35,14 @@ const HomePage = ({ langValue, data }) => {
     return (
         <>
             <Avatar url={_imgUrl + "avatar.jpg"} />
-            <div className="row">
-                <div className="col">
+            <div className="container-fluid row">
+                <div className="col-12 col-md-6">
                     <h2 className="title home-title">Java Script, Bootstrap & React</h2>
                     <p className="content home-content">{comment.comment1}</p>
                     <p className="content home-content">{comment.comment2}</p>
 
                 </div>
-                <div className="col">
+                <div className="col-12 col-md-6">
                     <h2 className="title home-title">My last projects</h2>
                     <div className="row">
                         {projects.map((elem, i) => {
@@ -53,7 +53,6 @@ const HomePage = ({ langValue, data }) => {
                                 link={href}
                                 key={i}
                                 imgClass={imgClassName}
-                                columCount={0}
                             />
                         })}
                     </div>

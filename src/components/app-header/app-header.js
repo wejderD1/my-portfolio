@@ -29,7 +29,7 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
         <header className="header">
             <div className="container">
                 <div className="align-items-center d-flex justify-content-between">
-                    <ul className="nav header-nav">
+                    <ul className="nav header-nav ">
                         {menu}
                     </ul>
                     <div className="lang-btn-container">

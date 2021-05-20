@@ -12,7 +12,7 @@ const MainContent = ({pageName, status, bgUri, innerElement}) => {
                 </div>
             </div>
             <img className="home-bg" src={_imgUrl + bgUri} alt="background-img" ></img>
-            <div className="container">
+            <div className="container-md">
                {innerElement} 
                {/* вставлется часть страницы которая лежит в папке /pages */}
             </div>
