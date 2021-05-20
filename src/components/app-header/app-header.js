@@ -5,6 +5,7 @@ import { langTroggle } from "../../service/actions";
 import Service from "../../service/service";
 
 import "./app-header.css";
+import BurgerMenu from "../burger-menu";
 
 const AppHeader = ({ langValue, langTroggle, content }) => {
 
@@ -24,12 +25,13 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
         langTroggle(value) //изменяю значение языка в стейте
     }
 
+    const burger = <BurgerMenu />
 
     return (
         <header className="header">
             <div className="container">
-                <div className="align-items-center d-flex justify-content-between">
-                    <ul className="nav header-nav ">
+                <div className="align-items-center d-flex justify-content-between main-menu">
+                    <ul className="nav header-nav">
                         {menu}
                     </ul>
                     <div className="lang-btn-container">
@@ -59,7 +61,6 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
                         </div>
                     </div>
                 </div>
-
                 <div className="social-block">
                     <a
                         href="https://www.facebook.com/yuriy.gnatuyk"
@@ -69,6 +70,8 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
                         <span className="fa fa-facebook"></span>
                     </a>
                 </div>
+                {burger}
+
             </div>
         </header>
 

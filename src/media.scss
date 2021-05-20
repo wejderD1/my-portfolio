@@ -42,7 +42,19 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .avatar-photo{
+        width: 180px;
+        height: 190px;
+        border-radius: 100%;
+    }
 
+    .burger-menu{
+        display: inline-block ;
+    }
+
+    .main-menu{
+        display: none !important;
+    }
 }
 
 // По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую:
