@@ -12,7 +12,7 @@ const ContactPage = ({ langValue, data }) => {
 
     const titleList = []
     const contentList = []
-    
+
     for (const key in aboutData) {
         if (Object.hasOwnProperty.call(aboutData, key)) {
             const element = aboutData[key];
@@ -21,36 +21,44 @@ const ContactPage = ({ langValue, data }) => {
         }
     }
 
-const _imgUrl = `${process.env.PUBLIC_URL}/img/`;
+    const _imgUrl = `${process.env.PUBLIC_URL}/img/`;
 
-return (
-    <div className="container">
-        <Avatar url={_imgUrl + "avatar.jpg"} />
-        <div className="about-me">
-            {titleList.map((elem, i) => {
-                return (
-                    <div className="about-me__item" key={i}>
-                        <h2 className="about-me__title">{elem}</h2>
-                        {contentList[i].map((elem, ii) => <p key={ii}>{elem}</p>)}
-                    </div>
-                )
-            })}
+    return (
+        <div className="container">
+            <Avatar url={_imgUrl + "avatar.jpg"} />
+            <div className="about-me">
+                {titleList.map((elem, i) => {
+                    return (
+                        <div className="about-me__item" key={i}>
+                            <h2 className="about-me__title">{elem}</h2>
+                            {contentList[i].map((elem, ii) => <p key={ii}>{elem}</p>)}
+                        </div>
+                    )
+                })}
+            </div>
+            <div className="contact-container jumbotron">
+                <h1>Contacts:</h1>
+                <p>97-500 Radomsko</p>
+                <p><span>tel: </span>798-613-331</p>
+                <p><span>email: </span>wejderd1@gmail.com</p>
+                <a
+                    href="https://www.facebook.com/yuriy.gnatuyk"
+                    className="btn btn-social-icon btn-facebook"
+                    target="_blank" rel="noreferrer"
+                >
+                    <span className="fa fa-facebook"></span>
+                </a>
+                <a
+                    href="https://wejderd1.github.io/CV/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <h3>My CV</h3>
+                </a>
+
+            </div>
         </div>
-        <div className="contact-container jumbotron">
-            <h1>Contacts:</h1>
-            <p>97-500 Radomsko</p>
-            <p><span>tel: </span>798-613-331</p>
-            <p><span>email: </span>wejderd1@gmail.com</p>
-            <a
-                href="https://www.facebook.com/yuriy.gnatuyk"
-                className="btn btn-social-icon btn-facebook"
-                target="_blank" rel="noreferrer"
-            >
-                <span className="fa fa-facebook"></span>
-            </a>
-        </div>
-    </div>
-)
+    )
 }
 
 const mapStateToProps = (state) => {

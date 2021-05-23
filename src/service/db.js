@@ -84,7 +84,7 @@ const data = {
                 part3: {
                     title: "Moje umiejętnośći",
                     content: [
-                        "- HTML: przy użyciu znaczników semantycznych, technologie BEM",
+                        "- HTML: używam znaczników semantycznych, technologie BEM",
                         "- CSS / SASS: zastosowanie sass, animacje css, grid, flex i wiele więcej ",
                         "- JS: zmienne zakresu blokowego, literały szablonów, destrukcyjne przypisanie, klasy i obiekty, Prommisy, funkcje strzałkowe, operacja Spread i nie tylko ... ",
                         "- React: natywnyj React, Redux, komponenty funkcjonalne i klasy, praca z prostymi serwerami, komponenty Bootstrap, Material-UI",
