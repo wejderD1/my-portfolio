@@ -16,20 +16,28 @@ const HomePage = ({ langValue, data }) => {
         {
             url: "food.jpg",
             caption: "Food",
-            href: "https://wejderd1.github.io/Food/index.html"
+            href: "https://wejderd1.github.io/Food/index.html",
+            code: "https://github.com/wejderD1/Food"
         },
         {
             url: "Mogo.jpg",
             caption: 'Mogo',
-            href: "https://wejderd1.github.io/Mogo/index.html"
+            href: "https://wejderd1.github.io/Mogo/index.html",
+            code: "https://github.com/wejderD1/Mogo"
         },
         {
             url: "online-zoo.jpg",
             caption: "Online-zoo",
-            href: "https://wejderD1.github.io/online-zoo/pages/first.html"
+            href: "https://wejderD1.github.io/online-zoo/pages/first.html",
+            code: "https://github.com/wejderD1/online-zoo"
+        },
+        {
+            url: "portfolio1.jpg",
+            caption: "AboutMe",
+            href: "https://wejderd1.github.io/portfolio1/index.html",
+            code: "https://github.com/wejderD1/portfolio1"
         }
     ]
-
     const comment = service.getData(langValue).homePage;
 
     return (
@@ -46,11 +54,12 @@ const HomePage = ({ langValue, data }) => {
                     <h2 className="title home-title">My last projects</h2>
                     <div className="row">
                         {projects.map((elem, i) => {
-                            const { url, caption, href } = elem;
+                            const { url, caption, href, code } = elem;
                             return <ProjectItem
                                 url={_imgUrl + url}
                                 caption={caption}
                                 link={href}
+                                code={code}
                                 key={i}
                                 imgClass={imgClassName}
                             />

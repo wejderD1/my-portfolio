@@ -1,12 +1,21 @@
 import React from "react";
 
-const ProjectItem = ({ url, caption, link, imgClass, columCount}) => {
+const ProjectItem = ({ url, caption, link, imgClass, code }) => {
     return (
         <div className={`col my-work-items`}>
-            <a href={link} target="_blank" rel="noreferrer">
+            <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+            >
                 <img className={imgClass} src={url} alt="project-img" />
-                <p>{caption}</p>
+                <p>{caption} / <a
+                    href={code}
+                    target="_blank"
+                    rel="noreferrer"
+                > kody źródłowe</a></p> 
             </a>
+
         </div>
     )
 }
