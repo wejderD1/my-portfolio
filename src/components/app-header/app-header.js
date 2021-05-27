@@ -69,7 +69,7 @@ const AppHeader = ({ langValue, langTroggle, content }) => {
                             autoComplete="off"
                             value="pol"
                         />
-                        <label className="btn btn-sm btn-outline-light lang-btn" htmlFor="btn-radio2">pol</label>
+                        <label className="btn btn-sm btn-outline-light lang-btn" htmlFor="btn-radio2">pl</label>
                     </div>
                 </div>
             </div>
