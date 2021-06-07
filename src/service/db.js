@@ -97,4 +97,38 @@ const data = {
         }
     }
 }
-export default data;
+
+const projects = [
+    {
+        url: "bigTheatre.png",
+        caption: "bigTheatre",
+        href: "https://wejderd1.github.io/bigTeatre/dist/index.html",
+        code: "https://github.com/wejderD1/bigTeatre"
+    },
+    {
+        url: "food.jpg",
+        caption: "Food",
+        href: "https://wejderd1.github.io/Food/index.html",
+        code: "https://github.com/wejderD1/Food"
+    },
+    {
+        url: "Mogo.jpg",
+        caption: 'Mogo',
+        href: "https://wejderd1.github.io/Mogo/index.html",
+        code: "https://github.com/wejderD1/Mogo"
+    },
+    {
+        url: "online-zoo.jpg",
+        caption: "Online-zoo",
+        href: "https://wejderD1.github.io/online-zoo/pages/first.html",
+        code: "https://github.com/wejderD1/online-zoo"
+    },
+    {
+        url: "portfolio1.jpg",
+        caption: "AboutMe",
+        href: "https://wejderd1.github.io/portfolio1/index.html",
+        code: "https://github.com/wejderD1/portfolio1"
+    }
+]
+
+export  {data, projects};

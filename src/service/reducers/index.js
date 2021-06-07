@@ -1,8 +1,9 @@
-import data from "../db";
+import {data, projects } from "../db";
 
 const initialState = {
     data, 
-    lang: "eng"
+    lang: "eng",
+    projects
 }
 
 const reducer = (state = initialState, action) => {

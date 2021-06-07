@@ -6,38 +6,11 @@ import Service from "../../service/service";
 
 import "./homePage.css";
 
-const HomePage = ({ langValue, data }) => {
+const HomePage = ({ langValue, data, projects }) => {
     const service = new Service(data);
 
     const _imgUrl = `${process.env.PUBLIC_URL}/img/`;
     const imgClassName = "project-img";
-
-    const projects = [
-        {
-            url: "food.jpg",
-            caption: "Food",
-            href: "https://wejderd1.github.io/Food/index.html",
-            code: "https://github.com/wejderD1/Food"
-        },
-        {
-            url: "Mogo.jpg",
-            caption: 'Mogo',
-            href: "https://wejderd1.github.io/Mogo/index.html",
-            code: "https://github.com/wejderD1/Mogo"
-        },
-        {
-            url: "online-zoo.jpg",
-            caption: "Online-zoo",
-            href: "https://wejderD1.github.io/online-zoo/pages/first.html",
-            code: "https://github.com/wejderD1/online-zoo"
-        },
-        {
-            url: "portfolio1.jpg",
-            caption: "AboutMe",
-            href: "https://wejderd1.github.io/portfolio1/index.html",
-            code: "https://github.com/wejderD1/portfolio1"
-        }
-    ]
     const comment = service.getData(langValue).homePage;
 
     return (
@@ -75,7 +48,8 @@ const HomePage = ({ langValue, data }) => {
 const mapStateToProps = (state) => {
     return {
         langValue: state.lang,
-        data: state.data
+        data: state.data,
+        projects: state.projects
     }
 }
 

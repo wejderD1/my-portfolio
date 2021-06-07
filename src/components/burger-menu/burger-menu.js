@@ -7,7 +7,6 @@ const BurgerMenu = () => {
     return (
         <div className="container burger-menu">
             <input id="toggle" type="checkbox" />
-
             <label className="toggle-container" htmlFor="toggle">
                 <span className="button button-toggle"></span>
             </label>
