@@ -18,7 +18,7 @@ const HomePage = ({ langValue, data, projects }) => {
             <Avatar url={_imgUrl + "avatar.jpg"} />
             <div className="container-fluid row">
                 <div className="col-12 col-md-6">
-                    <h2 className="title home-title">Java Script, Bootstrap & React</h2>
+                    <h2 className="title home-title">JavaScript, Bootstrap & React</h2>
                     <p className="content home-content">{comment.comment1}</p>
                     <p className="content home-content">{comment.comment2}</p>
 

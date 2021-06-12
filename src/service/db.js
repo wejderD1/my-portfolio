@@ -1,7 +1,7 @@
 const data = {
     eng: {
         header: {
-            menu: ["home", "portfolio", "about me & contakt"]
+            menu: ["home", "portfolio", "about me & contact"]
         },
         homePage: {
             status: "HI THERE, I AM A WEB DEVELOPER",
